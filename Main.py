@@ -67,8 +67,10 @@ f.close()
 while not os.path.exists("yzm.jpg"):
     one_sleep()
 ocr = ddddocr.DdddOcr()
+
 with open('yzm.jpg', 'rb') as f:
     img_bytes = f.read()
+
 yzm = ocr.classification(img_bytes)
 
 
